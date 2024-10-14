@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Add New Post - Wnr Journal</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="index.html" class="nav_logo">
+               <img src="img/logo .png" alt="logo" style="width: 50px; height: 50px; object-fit: contain;">
+            </a>
+
+            <div class="nav_actions">
+                <i class="ri-search-line search-button" id="search-button"></i>
+                <i class="ri-user-line login-button" id="login-button"></i>
+                <i class="ri-moon-line change-theme" id="theme-button" title="Toggle Theme"></i>
+                             
+                </a>
+            </div>
+        </nav>
+    </header>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                <img src="img/logo.png" alt="logo" style="width: 50px; height: 50px; object-fit: contain;">
+            </a>
+            <div class="nav_actions">
+                <i class="ri-search-line search-button" id="search-button"></i>
+                <i class="ri-user-line login-button" id="login-button"></i>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="add-post-container">
+        <h1 id="form-title">Add New Post</h1>
+        <!-- Close Icon -->
+        <i class="ri-close-line close-icon" id="close-button" title="Close"></i> 
+        <form id="add-post-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="post-title">Post Title</label>
+                <input type="text" id="post-title" name="post-title" required>
+            </div>
+            <div class="form-group">
+                <label for="post-content">Post Content</label>
+                <textarea id="post-content" name="post-content" rows="10" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="post-image">Upload Image</label>
+                <input type="file" id="post-image" name="post-image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-add-post">Submit Post</button>
+            </div>
+        </form>
+        <div class="back-link">
+            <a href="dashboard.html" class="btn-dashboard">Back to Dashboard</a>
+        </div>
+    </div>
+    
+    
+    <script src="js/addpost.js"></script>
+</body>
+</html>

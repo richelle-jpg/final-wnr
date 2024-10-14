@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="css/style.css">
+
+      <title>Wnr Journal</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                <img src="img/logo .png" alt="logo" style="width: 50px; height: 50px; object-fit: contain;">
+            </a>
+    
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#library" class="nav_link">
+                            <i class="ri-book-3-line"></i>
+                            <span>Library</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="ri-message-fill"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="nav_actions">
+                <i class="ri-search-line search-button" id="search-button"></i>
+                <i class="ri-user-line login-button" id="login-button"></i>
+                <i class="ri-moon-line change-theme" id="theme-button" title="Toggle Theme"></i>
+                             
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+        <form action="" class="search_form">
+            <i class="ri-search-line search_icon" id="search-button"></i>
+            <input type="search" id="search-input" name="search" placeholder="What are you looking for?" class="search_input">
+            <i class="ri-close-line search_close" id="search-close"></i>
+
+        </form>
+    </div>
+    
+
+      <!--==================== LOGIN ====================-->
+      
+<i class="ri-user-line login-button" id="login-button"></i>
+
+<div class="login grid" id="login-content">
+    <form action="" class="login_form grid">
+        <img src="img/logo .png" alt="Wnr Journal" class="login_logo"> 
+        <label for="login-email" class="login_label">Email</label>
+        <input type="email" placeholder="Enter your email" id="login-email" class="login_input">
+        
+        <label for="login-pass" class="login_label">Password</label>
+        <input type="password" placeholder="Enter your password" id="login-pass" class="login_input">
+        
+        <button type="submit" class="login_button button">Login</button>
+        <a href="#" id="open-signup">Sign Up</a>
+        <a href="#" id="open-forgot">Forgot Password?</a>
+    </form>
+    <i class="ri-close-line login_close" id="login-close"></i>
+</div>
+
+<!-- Sign Up Form -->
+<div class="signup grid" id="signup-content">
+    <form action="" class="signup_form grid">
+        <img src="img/logo .png" alt="Wnr Journal" class="forgot_logo"> 
+        <h3>Sign Up</h3>
+        <label for="signup-username" class="signup_label">Username</label>
+        <input type="text" placeholder="Write your username" id="signup-username" class="signup_input">
+        
+        <label for="signup-email" class="signup_label">Email</label>
+        <input type="email" placeholder="Write your email" id="signup-email" class="signup_input">
+        
+        <label for="signup-pass" class="signup_label"> Create Password</label>
+        <input type="password" placeholder="Enter your password" id="signup-pass" class="signup_input">
+
+        <label for="signup-pass" class="signup_label"> Confirm Password</label>
+        <input type="password" placeholder="Enter your password" id="signup-pass" class="signup_input">
+        
+        <button type="submit" class="signup_button button">Submit</button>
+        <a href="#" id="open-login-from-signup">Already have an account? Login</a>
+    </form>
+    <i class="ri-close-line signup_close" id="signup-close"></i>
+</div>
+
+<!-- Forgot Password Form -->
+<div class="forgot grid" id="forgot-content">
+    <form action="" class="forgot_form grid">
+        <img src="img/logo .png" alt="Wnr Journal" class="forgot_logo"> 
+        <h3>Forgot Password</h3>
+
+
+        <label for="signup-pass" class="signup_label">Create new password</label>
+        <input type="password" placeholder="Enter new password" id="signup-pass" class="signup_input">
+
+        <label for="signup-pass" class="signup_label">Confirm Password</label>
+        <input type="password" placeholder="Enter your password" id="signup-pass" class="signup_input">
+        
+        <button type="submit" class="forgot_button button">Submit</button>
+        <a href="#" id="open-login-from-forgot">Remembered? Login</a>
+    </form>
+    <i class="ri-close-line forgot_close" id="forgot-close"></i>
+</div>
+
+    
+    <section class="library section" id="library">
+        <h2 class="library-title1">Library</h2>
+        <div class="library-container container">
+            <div class="library-swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-1.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 1</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-2.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 2</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-3.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 3</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-4.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 4</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-5.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 5</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-6.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 6</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-7.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 7</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-8.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 8</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-9.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 9</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+    
+                    <article class="library-card swiper-slide">
+                        <img src="img/book-10.png" alt="image" class="library-img">
+                        <h2 class="library-title">Book 10</h2>
+                        <div class="library-actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                        </div>
+                    </article>
+                </div> 
+                
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Library Section -->
+    <div class="container">
+
+        <div class="library-section">
+            <div class="library-title">
+                <h2>WnR Journal Library</h2>
+                <p>Hello. Welcome to WnR! Our digital library project is used to create an accessible, user-friendly platform for book lovers, authors, and readers. Our project aims to offer a vast collection of eBooks across various genres, including fiction, non-fiction, horror, and more. Users can browse, search, and read books. It is designed to be accessible from any device, connecting readers to knowledge anytime, anywhere.</p>
+            </div>
+    
+            
+            <div class="add-post-button">
+                <a href="dashboard.html" class="btn-add-post">Add Post</a> 
+            </div>
+    
+            
+            <div class="cards">
+                
+              
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/lib2.jpeg" alt="The Lion and the Mouse">
+                    </div>
+                    <div class="posted-date">Posted on October 2, 2024</div>
+                    <div class="content-lib">
+                        <h4>The Lion and the Mouse</h4>
+                        <p class="excerpt">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night...</p>
+                        <p class="full-text" style="display: none;">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night, they would dance and play under the glow of the moon, sharing stories and dreams. But one fateful night, Lumi discovered a hidden path that led to a magical realm filled with wonders beyond her imagination. As she explored this new world, she encountered friends and foes alike, learning valuable lessons about bravery, friendship, and the power of light in the darkest of times.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/lib3.png" alt="The Lanterns of Love">
+                    </div>
+                    <div class="posted-date">Posted on October 2, 2024</div>
+                    <div class="content-lib">
+                        <h4>The Lanterns of Love</h4>
+                        <p class="excerpt">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night...</p>
+                        <p class="full-text" style="display: none;">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night, they would dance and play under the glow of the moon, sharing stories and dreams. But one fateful night, Lumi discovered a hidden path that led to a magical realm filled with wonders beyond her imagination. As she explored this new world, she encountered friends and foes alike, learning valuable lessons about bravery, friendship, and the power of light in the darkest of times.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/lib4.jpeg" alt="A Love Written in the Stars">
+                    </div>
+                    <div class="posted-date">Posted on October 2, 2024</div>
+                    <div class="content-lib">
+                        <h4>A Love Written in the Stars</h4>
+                        <p class="excerpt">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night...</p>
+                        <p class="full-text" style="display: none;">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night, they would dance and play under the glow of the moon, sharing stories and dreams. But one fateful night, Lumi discovered a hidden path that led to a magical realm filled with wonders beyond her imagination. As she explored this new world, she encountered friends and foes alike, learning valuable lessons about bravery, friendship, and the power of light in the darkest of times.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+           
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/lib5.jpeg" alt="The Bookshop of Forgotten Dreams">
+                    </div>
+                    <div class="posted-date">Posted on October 2, 2024</div>
+                    <div class="content-lib">
+                        <h4>The Bookshop of Forgotten Dreams</h4>
+                        <p class="excerpt">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night...</p>
+                        <p class="full-text" style="display: none;">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night, they would dance and play under the glow of the moon, sharing stories and dreams. But one fateful night, Lumi discovered a hidden path that led to a magical realm filled with wonders beyond her imagination. As she explored this new world, she encountered friends and foes alike, learning valuable lessons about bravery, friendship, and the power of light in the darkest of times.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+             
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/lib1.jpeg" alt="The Firefly and the Forest">
+                    </div>
+                    <div class="posted-date">Posted on October 2, 2024</div>
+                    <div class="content-lib">
+                        <h4>The Firefly and the Forest</h4>
+                        <p class="excerpt">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night...</p>
+                        <p class="full-text" style="display: none;">In the heart of a vast and dark forest, a tiny firefly named Lumi lived with her friends. Every night, they would dance and play under the glow of the moon, sharing stories and dreams. But one fateful night, Lumi discovered a hidden path that led to a magical realm filled with wonders beyond her imagination. As she explored this new world, she encountered friends and foes alike, learning valuable lessons about bravery, friendship, and the power of light in the darkest of times.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+            </div>
+            
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+   <!--========== SCROLL UP ==========-->
+      
+   <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src=""></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="js/main.js"></script>
+</body>
+</html>

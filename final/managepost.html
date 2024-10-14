@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Publish Posts - Wnr Journal</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+
+   <header class="header" id="header">
+    <nav class="nav container">
+       <a href="index.html" class="nav_logo">
+           <img src="img/logo .png" alt="logo" style="width: 50px; height: 50px; object-fit: contain;">
+        </a>
+
+          <div class="nav_menu">
+           <ul class="nav_list">
+               <li class="nav_item">
+                   <a href="index.html" class="nav_link">
+                       <i class="ri-home-line"></i>
+                       <span>Home</span>
+                   </a>
+                   </li>
+                   <li class="nav_item">
+                       <a href="library.html" class="nav_link">
+                           <i class="ri-book-3-line"></i>
+                           <span>Library</span>
+                       </a> 
+                   </li>         
+                   <li class="nav_item">
+                       <a href="about.html" class="nav_link">
+                           <i class="ri-message-fill"></i>
+                           <span>About</span>
+                       </a> 
+                   </li>                 
+           </ul>
+          </div>
+
+          <div class="nav_actions">
+            <i class="ri-search-line search-button" id="search-button"></i>
+            <i class="ri-user-line login-button" id="login-button"></i>
+            <i class="ri-moon-line change-theme" id="theme-button" title="Toggle Theme"></i>
+                         
+            </a>
+       </div>
+      
+    </nav>
+ </header>
+
+<i class="ri-user-line login-button" id="login-button"></i>
+
+<div class="login grid" id="login-content">
+<form action="" class="login_form grid">
+   <img src="img/logo .png" alt="Wnr Journal" class="login_logo"> 
+   <label for="login-email" class="login_label">Email</label>
+   <input type="email" placeholder="Enter your email" id="login-email" class="login_input">
+   
+   <label for="login-pass" class="login_label">Password</label>
+   <input type="password" placeholder="Enter your password" id="login-pass" class="login_input">
+   
+   <button type="submit" class="login_button button">Login</button>
+   <a href="#" id="open-signup">Sign Up</a>
+   <a href="#" id="open-forgot">Forgot Password?</a>
+</form>
+<i class="ri-close-line login_close" id="login-close"></i>
+</div>
+
+<!-- Sign Up Form -->
+<div class="signup grid" id="signup-content">
+<form action="" class="signup_form grid">
+   <img src="img/logo .png" alt="Wnr Journal" class="forgot_logo"> 
+   <h3>Sign Up</h3>
+   <label for="signup-username" class="signup_label">Username</label>
+   <input type="text" placeholder="Write your username" id="signup-username" class="signup_input">
+   
+   <label for="signup-email" class="signup_label">Email</label>
+   <input type="email" placeholder="Write your email" id="signup-email" class="signup_input">
+   
+   <label for="signup-pass" class="signup_label"> Create Password</label>
+   <input type="password" placeholder="Enter your password" id="signup-pass" class="signup_input">
+
+   <label for="signup-pass" class="signup_label"> Confirm Password</label>
+   <input type="password" placeholder="Enter your password" id="signup-pass" class="signup_input">
+   
+   <button type="submit" class="signup_button button">Submit</button>
+   <a href="#" id="open-login-from-signup">Already have an account? Login</a>
+</form>
+<i class="ri-close-line signup_close" id="signup-close"></i>
+</div>
+
+<!-- Forgot Password Form -->
+<div class="forgot grid" id="forgot-content">
+<form action="" class="forgot_form grid">
+   <img src="img/logo .png" alt="Wnr Journal" class="forgot_logo"> 
+   <h3>Forgot Password</h3>
+
+
+   <label for="signup-pass" class="signup_label">Create new password</label>
+   <input type="password" placeholder="Enter new password" id="signup-pass" class="signup_input">
+
+   <label for="signup-pass" class="signup_label">Confirm Password</label>
+   <input type="password" placeholder="Enter your password" id="signup-pass" class="signup_input">
+   
+   <button type="submit" class="forgot_button button">Submit</button>
+   <a href="#" id="open-login-from-forgot">Remembered? Login</a>
+</form>
+<i class="ri-close-line forgot_close" id="forgot-close"></i>
+</div>
+
+ <!--==================== SEARCH ====================-->
+ <div class="search" id="search-content">
+   <form action="" class="search_form">
+       <i class="ri-search-line search_icon" id="search-button"></i>
+       <input type="search" id="search-input" name="search" placeholder="What are you looking for?" class="search_input">
+       <i class="ri-close-line search_close" id="search-close"></i>
+
+   </form>
+</div>
+
+            <div class="containers">
+                <h1>Manage Your Posts</h1>
+                <p>Below is a list of your published posts. You can edit or delete them as needed.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sample Book Title 1</td>
+                            <td>Author Name 1</td>
+                            <td>
+                                <a href="editpost.html?id=1" class="button">Edit</a>
+                                <a href="deletepost.html?id=1" class="button">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sample Book Title 2</td>
+                            <td>Author Name 2</td>
+                            <td>
+                                <a href="editpost.html?id=2" class="button">Edit</a>
+                                <a href="deletepost.html?id=2" class="button">Delete</a>
+                            </td>
+                        </tr>
+                        <!-- Add more posts here -->
+                    </tbody>
+                </table>
+            </div>
+ 
+                
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
